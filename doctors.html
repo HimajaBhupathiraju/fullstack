@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color:#29698c;
+        width: 100%;
+        height: 80px;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+         /* transition: width 2s ease-out ; */
+      }
+      .mailhead{
+        color: white;
+      }
+      .header:hover {
+        /* background-color: #4f2d46c1; */
+        color: white;
+        font-size: larger;
+        font-weight: bolder;
+        border: 2px solid #fbf8d5;
+        /* box-shadow: 10px 10px 3px 2px #cee5f1; */
+        /* width: 1%; */
+      }
+      a{
+        color: black;
+      }
+      .icon1a{
+         border-radius: 50%;
+        box-shadow: 2px 2px 1px 0px;
+      }
+
+      .mail {
+        display: flex;
+        justify-content: space-evenly;
+        width: 30%;
+        align-items: center;
+        
+      }
+      
+      .address {
+        display: flex;
+        justify-content: space-evenly;
+        width: 30%;
+        align-items: center;
+      }
+      .number {
+        display: flex;
+        justify-content: space-evenly;
+        width: 30%;
+        align-items: center;
+      }
+      .icon1 {
+        border-radius: 50%;
+        box-shadow: 2px 2px 1px 0px;
+        
+        animation-name: icon1;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes icon1 
+      { 
+        from{
+            transform: rotate(0deg);
+      }
+        to{
+          transform: rotate(360deg);
+        }
+      }
+      
+      video {
+        background-size: cover;
+        /* width: 100%; */
+        /* background-color:black; */
+      }
+      nav {
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        margin-top: 10px;
+        width: 100%;
+        align-items: center;
+        background-color: #e5eef9;
+        /* animation-name: nav;
+         animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+         */
+      }
+      /* @keyframes nav {
+         0%   {background-color:rgb(251, 201, 201); }
+           25%  {background-color:rgb(255, 255, 194); }
+           50%  {background-color:rgb(200, 200, 249); }
+           75%  {background-color:rgba(142, 182, 142, 0.968); }
+           100% {background-color:rgb(251, 192, 192); }
+
+        
+      } */
+      .nav{
+         position: sticky;
+        top: 82px;
+        z-index: 1;
+        /* background-color: brown; */
+        transition-property: background-color;
+        transition-duration: 5s;
+        
+      }
+      
+
+      nav:hover{
+         /* background-color: #f2d7cb77; */
+        color: indigo;
+        font-size: larger;
+        font-weight: bolder;
+        border: 2px solid #f3d0d3;
+        /* box-shadow: 10px 10px 3px 2px #e5eef9; */
+        
+      }
+      .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* background-color:rgb(244, 245, 241) ; */
+        width:100%;
+        height: 50px;
+        align-items: center;
+       
+      }
+      .hospname {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 250px;
+        height: 80px;
+        color: darkred;
+      }
+      .hosplogo {
+        border-radius: 50%;
+        box-shadow: 0px 0px;
+        border: 2px groove red;
+      }
+      .search {
+        border-radius: 8px;
+        width: 90%;
+        height: 50px;
+        border: 2px solid #fbf0d7f7;
+        position: relative;
+        left: 40px;
+         animation-name: search;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+      }
+      .search:focus {
+        background-color: #f3d0d3;
+
+      }
+      .searchbar {
+        width: 80%;
+        position: absolute;
+        top: 700px;
+        left: 150px;
+        -webkit-text-fill-color: white ;
+       
+      }
+      @keyframes search {
+         0%   {background-color:rgba(162, 237, 252, 0.729); }
+          
+           100% {background-color:rgba(145, 153, 168, 0.786); }
+        
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 400px 40px;
+        background-color:  rgba(243, 243, 168, 0.719);
+      }
+      .none {
+        display: none;
+        /* background-color: rgb(248, 225, 225); */
+        position: absolute;
+        top: 120px;
+        left: 450px;
+      }
+      .d1:hover{
+        .none {
+            display: block;
+        }
+      }
+      .d2:hover{
+        .none {
+            display: block;
+        }
+      }
+    .quick{
+        background-color: rgba(243, 243, 168, 0.719);
+        width: 250px;
+    }
+    .d3:hover{
+        .none {
+            display: block;
+        }
+      }
+    .d4:hover{
+        .none {
+            display: block;
+        }
+      }
+   .d5:hover{
+        .none {
+            display: block;
+        }
+      }
+
+   .mainfooter{
+            display: grid;
+            grid-template-columns:300px 200px 200px 250px 300px ;
+            justify-content: center;
+            align-content: center;
+           
+        }
+        /* footer{
+          position: sticky;
+          bottom: 0px;
+        } */
+        .listfoot{
+            display: flex;
+            gap: 20px;
+        }
+        .fhosp{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .fhospname{
+            font-size: 30px;
+            font-weight: 900;
+            font-family: 'cursive' 'lucidahandwriting';
+        }
+        .iconmail{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .contacticon{
+             display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .frowbtm{
+             display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 20px;
+            border-top: 1px solid black;
+           margin-right: 180px;
+           
+        }
+        .copyright{
+          text-align: center;
+
+        }
+        .copyright1{
+            text-align: center;
+           margin-right: 150px
+        }
+        footer{
+          padding: 80PX;
+            width: 100%;
+           background-color: #bdd1cf;
+        }
+        .line{
+           margin-right: -500px;
+           margin-left: 20px;
+        }
+        .mainappointbtn{
+            width: 100%;
+            height: 400px;
+             background-image:url(https://i.pinimg.com/736x/3b/d7/64/3bd76466c84ba8b5a4b8ee50d493de57.jpg) ;
+            background-repeat:no-repeat ;
+            background-size: cover;
+            text-align: center;
+            /* margin-top: 20px; */
+            margin: 20px;
+            
+        }
+        .subappointbtn{
+            position: relative;
+            top: 150px;
+            left: 300px;
+        }
+        #btnbookappoint{
+          height: 80px; 
+          width: 350px; 
+           background-color: #82659d;
+            border: 5px double rgba(255, 255, 0, 0.564);
+             animation-name: appoint;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            -webkit-text-fill-color: white ;
+        }
+             @keyframes appoint {
+           0%   {background-color:rgb(36, 36, 65); left:0px; top:0px;}
+           /* 25%  {background-color:rgb(242, 242, 205); left:200px; top:0px;}
+           50%  {background-color:rgb(210, 210, 238); left:200px; top:200px;}
+           75%  {background-color:rgb(217, 248, 217); left:0px; top:200px;} */
+           100% {background-color:rgb(56, 46, 74); left:0px; top:0px;}
+             }
+        #btnbookappoint:hover{
+          background-color: #6e7f9a;
+        }
+
+      .docgrid{
+        display: grid;
+        grid-template-columns:300px 300px 300px 300PX;
+        grid-template-rows:350px 350px 350px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+        background-color: #f7f2e667;
+      }
+      .docflex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 5px double rgb(148, 57, 139);
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #bcc9b165; 
+        box-shadow: 5px 5px 2px 2px rgb(148, 134, 143);
+      }
+      .docname{
+        font-size: 20px;
+        font-style: italic;
+        background-color:rgba(129, 7, 7, 0.496) ;
+        border-radius: 15px;
+        padding: 5px;
+        color: white;
+      }
+      .doctors{
+        width: 100%;
+        height: 500px;
+        background-image: url(https://i.pinimg.com/736x/d0/30/ae/d030ae9e4753ff4cc64dc64f1be7dcfb.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .subdoc{
+        position: relative;
+        left:400px;
+        text-align: center;
+      }
+      .dochead{
+        color: rgb(39, 2, 64);
+            position: relative;
+            bottom: 40px;
+             font-size: 60px;
+            font-weight: bolder;
+      }
+      .docpara{
+        color: rgb(130, 54, 10);
+            font-size: 30px;
+            font-weight: bolder;
+            font-style: italic;
+      }
+      .docimg:hover{
+            transform: scale(1.1);
+      }
+      .docdepart{
+        font-style: italic;
+        color: rgb(9, 3, 60);
+      }
+
+
+  
+     </style>
+</head>
+<body>
+            <header class="header">
+        <div class="mail">
+          <a href="https://mail.google.com/"
+            ><img class="icon1"
+              src="https://static.vecteezy.com/system/resources/previews/016/716/465/non_2x/gmail-icon-free-png.png"
+              alt="mail"
+              style="height: 30px; width: 30px"
+          /></a>
+          <a href="https://mail.google.com/">Mail to: support@lifespring</a>
+        </div>
+        <div class="address">
+          <a
+            href="https://www.google.com/maps/place/Indraprastha+Apollo+Hospital/@28.5413647,77.2820434,19z/data=!4m10!1m2!2m1!1sdelhi+famous+hospital!3m6!1s0x390ce6ad13eaaa99:0x3bc07ad476bc6d77!8m2!3d28.5413093!4d77.2832182!15sChVkZWxoaSBmYW1vdXMgaG9zcGl0YWxaFyIVZGVsaGkgZmFtb3VzIGhvc3BpdGFskgEIaG9zcGl0YWyqAVwKCC9tLzBocG5yEAEqEyIPZmFtb3VzIGhvc3BpdGFsKAAyHhABIhrwfZq6c3enm5Ok1ooKHL8PzTvesudgVlK5XjIZEAIiFWRlbGhpIGZhbW91cyBob3NwaXRhbOABAA!16s%2Fg%2F1tnpjcxm?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D"
+            ><img class="icon1"
+              src="data:image/png;base64,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"
+              alt="pin"
+              style="width: 30px; height: 30px"
+          /></a>
+          <address>Address: Ta-134/A, Delhi, India</address>
+        </div>
+        <div class="number">
+          <img class="icon1"
+            src="https://static.vecteezy.com/system/resources/previews/005/747/811/non_2x/call-answer-icon-symbol-green-call-icon-symbol-for-web-app-logo-vector.jpg"
+            alt="call"
+            style="width: 30px"
+            height="30px"
+          />
+          <u>Call Now :+91-9912944489 </u>
+        </div>
+      </header>
+       <div class="nav">
+        <nav>
+          <div class="hospname">
+            <img class="icon1a"
+              class="hosplogo"
+              src="https://doctorlistingingestionpr.blob.core.windows.net/doctorprofilepic/1670828129787_ProviderLogo_loadTheImage.jpg"
+              height="50px"
+              width="23%"
+              alt="hospital"
+            />
+            <h1
+              
+            >
+              Life springs
+            </h1>
+          </div>
+          <div class="navbar">
+
+
+            <a class="d1" href="discover.html"
+              >DISCOVER
+              <div class="maindis">
+              <div class="none">
+                <div class="grid">
+                  <div>
+                    <ul>
+                      <li>The life spring Story</li>
+                      <li>Leadership</li>
+                      <li>Academics & Research</li>
+                      <li>Sustainability</li>
+                      <li>Corporate Governance</li>
+                      <li>Investor Relations</li>
+                      <li>Media Centre</li>
+                      <li>Corporate Tiepus & Partnerships</li>
+                      <li>Healers Circle</li>
+                      <li>Clinical Quality & Outcomes</li>
+                    </ul>
+                  </div>
+                  <div class="quick">
+                    <h2 style="
+                        background-color:rgba(255, 255, 255, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      ">Quick Links</h2>
+                    <div
+                      style="
+                       background-color: rgba(212, 237, 252, 0.686);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Emergency</div>
+                      <div>1066</div>
+                    </div>
+                    <div
+                      style="
+                       background-color:rgba(222, 246, 176, 0.729);
+                        height: 100px;
+                        width: 250px;
+                      "
+                    >
+                      <div>life spring Lifeline International</div>
+                      <div>+91 9912944489</div>
+                    </div>
+                    <div
+                      style="
+                      background-color:rgba(247, 217, 217, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Health Help Line</div>
+                      <div>1860-500-1066</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </a>
+
+
+            <a href="hosp.html">HOME</a>
+            <a class="d2" href="services.html">SERVICES
+              <div class="none">
+                <div class="grid">
+
+                <div>
+                  <ul>
+                    <li>Centres of Excellence & Specialties</li>
+                    <li>Find Doctor</li>
+                    <li>Book Health Check</li>
+                    <li>Patient Care</li>
+                    <li>Preventive Health - Life Spring ProHealth</li>
+                    <li>Pay Online</li>
+                  </ul>
+                </div>
+                 <div class="quick">
+                    <h2 style="
+                        background-color:rgba(255, 255, 255, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      ">Quick Links</h2>
+                    <div
+                      style="
+                        background-color: rgba(212, 237, 252, 0.686);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Emergency</div>
+                      <div>1066</div>
+                    </div>
+                    <div
+                      style="
+                        background-color:rgba(222, 246, 176, 0.729);
+                        height: 100px;
+                        width: 250px;
+                      "
+                    >
+                      <div>life spring Lifeline International</div>
+                      <div>+91 9912944489</div>
+                    </div>
+                    <div
+                      style="
+                        background-color:rgba(247, 217, 217, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Health Help Line</div>
+                      <div>1860-500-1066</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="d3" href="departments.html">DEPARTMENT
+              <div class="none">
+                <div class="grid">
+
+                <div>
+                  <ul>
+                    <li>Cardiology</li>
+                    <li>Gastroenterology</li>
+                    <li>Nephrology</li>
+                    <li>General Medicine</li>
+                    <li>Urology</li>
+                    <li>Plastic Surgery</li>
+                    <li>Obstetrics & Gynaecology</li>
+                    <li>Oncology</li>
+                    <li>Orthopaedics</li>
+                    <li>Neurosciences</li>
+                    <li>Dermatology</li>
+                    <li>view all</li>
+                  </ul>
+                </div>
+                 <div class="quick">
+                    <h2 style="
+                         background-color:rgba(255, 255, 255, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      ">Quick Links</h2>
+                    <div
+                      style="
+                         background-color: rgba(212, 237, 252, 0.686);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Emergency</div>
+                      <div>1066</div>
+                    </div>
+                    <div
+                      style="
+                        background-color:rgba(222, 246, 176, 0.729);
+                        height: 100px;
+                        width: 250px;
+                      "
+                    >
+                      <div>life spring Lifeline International</div>
+                      <div>+91 9912944489</div>
+                    </div>
+                    <div
+                      style="
+                         background-color:rgba(247, 217, 217, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Health Help Line</div>
+                      <div>1860-500-1066</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            </a>
+            <a class="d4" href="doctors.html">DOCTORS
+               <div class="none">
+                <div class="grid">
+
+                <div>
+                  <ul>
+                    <li>Book An Appointment</li>
+                    <li>Online consultation</li>
+                    <li>Any queries</li>
+                    
+                  </ul>
+                </div>
+                 <div class="quick">
+                    <h2 style="
+                        background-color:rgba(255, 255, 255, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      ">Quick Links</h2>
+                    <div
+                      style="
+                         background-color: rgba(212, 237, 252, 0.686);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Emergency</div>
+                      <div>1066</div>
+                    </div>
+                    <div
+                      style="
+                         background-color:rgba(222, 246, 176, 0.729);
+                        height: 100px;
+                        width: 250px;
+                      "
+                    >
+                      <div>life spring Lifeline International</div>
+                      <div>+91 9912944489</div>
+                    </div>
+                    <div
+                      style="
+                        background-color:rgba(247, 217, 217, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Health Help Line</div>
+                      <div>1860-500-1066</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            </a>
+            <a class="d5" href="contact.html">CONTACT
+               <div class="none">
+                <div class="grid">
+                  <ul>
+                    <li> For any quries contact us</li>
+                  </ul>
+
+                 <div class="quick">
+                    <h2 style="
+                         background-color:rgba(255, 255, 255, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      ">Quick Links</h2>
+                    <div
+                      style="
+                         background-color: rgba(212, 237, 252, 0.686);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Emergency</div>
+                      <div>1066</div>
+                    </div>
+                    <div
+                      style="
+                        background-color:rgba(222, 246, 176, 0.729);
+                        height: 100px;
+                        width: 250px;
+                      "
+                    >
+                      <div>life spring Lifeline International</div>
+                      <div>+91 9912944489</div>
+                    </div>
+                    <div
+                      style="
+                        background-color:rgba(247, 217, 217, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Health Help Line</div>
+                      <div>1860-500-1066</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </nav>
+      </div>
+      <div class="doctors">
+        <div class="subdoc">
+            <p class="docpara">All Doctors</p>
+        <h1 class="dochead">Specalized doctors</h1>
+        </div>
+      </div>
+      <div class="docgrid">
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/0a/03/85/0a0385c9c1ae1dcde0103e8f5db300e9.jpg" alt="">
+            <h1 class="docname">Harrision Samuel</h1>
+            <p class="docdepart">Cardiology</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/76/3b/ae/763bae81d4f212fa58eb97a932fb18fb.jpg" alt="">
+            <h1 class="docname">Thomas Henry</h1>
+            <p class="docdepart">Gynecology</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/2e/36/ab/2e36ab977a8f68f4967e87a8321a4a1b.jpg" alt="">
+            <h1 class="docname">Anisha Datla</h1>
+            <p class="docdepart">Oncology</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/d7/68/23/d768232056cc54b7b9e9500ef231aadc.jpg" alt="">
+            <h1 class="docname">Alexandar James</h1>
+            <p class="docdepart">Pulmonology</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/f4/77/c3/f477c3781d2f4db5af11a3b26f257ad3.jpg" alt="">
+            <h1 class="docname">kaara singh</h1>
+            <p class="docdepart">Neurosurgen</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/f2/f1/fa/f2f1fa3a611dfb4f4be81396ebca56eb.jpg" alt="">
+            <h1 class="docname">Edward john</h1>
+            <p class="docdepart">Hepatology</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/4f/ce/96/4fce966d2cdb0ddf819eacf8b0c4227d.jpg" alt="">
+            <h1 class="docname">Anushka jain</h1>
+           <p class="docdepart">Nephrology</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/9f/f0/ee/9ff0ee73c8b2d1e2cfe1cc831d611f4a.jpg" alt="">
+            <h1 class="docname">Henry samuel</h1>
+            <p class="docdepart">orthopedics</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/4a/3a/0f/4a3a0ff4871d8c3c965b697d201fcc1c.jpg" alt="">
+            <h1 class="docname"> Shradha lewis</h1>
+            <p class="docdepart">Urology</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/7e/7b/02/7e7b02b92f2e18c9aec060e18d8dfff5.jpg" alt="">
+            <h1 class="docname">Thomas alexandar</h1>
+            <p class="docdepart">General Medicine</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/a3/9c/6f/a39c6f4b59b21ae70e78e074c8801f36.jpg" alt="">
+            <h1 class="docname">candice warner</h1>
+            <p class="docdepart">ENT</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/bd/5e/90/bd5e90ad1d2001de845837b1d3329d89.jpg" alt="">
+            <h1 class="docname">Jonas Thomson</h1>
+            <p class="docdepart">Dental</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/20/f0/3d/20f03d2dc59c8f04ddcb6d6b602a0ebb.jpg" alt="">
+            <h1 class="docname">Viviana kaur </h1>
+            <p class="docdepart">Dermatology</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/bf/f7/ab/bff7ab48907beb6c20b204a2143d88f5.jpg" alt="">
+            <h1 class="docname">Henry Forth</h1>
+            <p class="docdepart">Radiology</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/cf/9a/6f/cf9a6f0a377f6555210a80be4f98fc9b.jpg" alt="">
+            <h1 class="docname">Zoya Mathew</h1>
+            <p class="docdepart">Emergency</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/07/91/34/0791343638901bc8ea5196f06855caff.jpg" alt="">
+            <h1 class="docname">Damon salvatore</h1>
+            <p class="docdepart">pediatricion</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/20/f0/3d/20f03d2dc59c8f04ddcb6d6b602a0ebb.jpg" alt="">
+            <h1 class="docname">Ria Rajan</h1>
+            <p class="docdepart">Nerurology</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/ea/13/d8/ea13d84536d8a8ac856605278c493705.jpg" alt="">
+            <h1 class="docname">Jos buttler</h1>
+            <p class="docdepart">opthalmologist</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/84/2c/9c/842c9c91a563af83f44b47b0afe1c7b6.jpg" alt="">
+            <h1 class="docname">Sanjana varma</h1>
+            <p class="docdepart">Gastroenterologist</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/d5/23/04/d523044995060498df22c3d6dba01065.jpg" alt="">
+            <h1 class="docname">Yong hi</h1>
+            <p class="docdepart">Anesthesiologist</p>
+        </div>
+         <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/bf/f7/ab/bff7ab48907beb6c20b204a2143d88f5.jpg" alt="">
+            <h1 class="docname">Cummins</h1>
+            <p class="docdepart">Internal Medicine </p>
+        </div>
+         <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/cf/9a/6f/cf9a6f0a377f6555210a80be4f98fc9b.jpg" alt="">
+            <h1 class="docname">Meenakshi Ganesan</h1>
+            <p class="docdepart">Emergency</p>
+        </div>
+          <!-- <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/0a/03/85/0a0385c9c1ae1dcde0103e8f5db300e9.jpg" alt="">
+            <h1 class="docname"> Sam Samuel</h1>
+            <p class="docdepart">Cardiology</p>
+        </div> -->
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/76/3b/ae/763bae81d4f212fa58eb97a932fb18fb.jpg" alt="">
+            <h1 class="docname"> petter Henry</h1>
+            <p class="docdepart">Gynecology</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/2e/36/ab/2e36ab977a8f68f4967e87a8321a4a1b.jpg" alt="">
+            <h1 class="docname"> ariyana john</h1>
+            <p class="docdepart">Oncology</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/d7/68/23/d768232056cc54b7b9e9500ef231aadc.jpg" alt="">
+            <h1 class="docname">Alexandar flamingo</h1>
+            <p class="docdepart">Pulmonology</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/f4/77/c3/f477c3781d2f4db5af11a3b26f257ad3.jpg" alt="">
+            <h1 class="docname"> sheethal singh</h1>
+            <p class="docdepart">Neurosurgen</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/f2/f1/fa/f2f1fa3a611dfb4f4be81396ebca56eb.jpg" alt="">
+            <h1 class="docname">Mario john</h1>
+            <p class="docdepart">Hepatology</p>
+        </div>
+        <div class="docflex">
+            <img class="docimg" height="200px" width="200px" src="https://i.pinimg.com/736x/4f/ce/96/4fce966d2cdb0ddf819eacf8b0c4227d.jpg" alt="">
+            <h1 class="docname">jvala jain</h1>
+           <p class="docdepart">Nephrology</p>
+        </div>
+      
+    </div>
+
+     <div class="mainappointbtn">
+        <div class="subappointbtn">
+            <a href="appointment.html"><button id="btnbookappoint">Book An Appointment</button></a>
+        </div>
+        </div>
+
+    <footer>
+        <div class="container">
+           <!-- <div class="mainfootergrid"> -->
+		  <div class="mainfooter">
+			<div class="frow1">
+				<div class="foot2">
+					<div class="fhosp">
+						<img  src= "https://doctorlistingingestionpr.blob.core.windows.net/doctorprofilepic/1670828129787_ProviderLogo_loadTheImage.jpg"
+                          height="100px"width="100px" alt="hospital" class="fhospimg"> <span class="fhospname">Life Springs</span>
+					</div>
+					<p>Tempora dolorem voluptatum nam vero assumenda voluptate, facilis ad eos obcaecati tenetur veritatis eveniet distinctio possimus.</p>
+
+					<ul class="listfoot">
+						<li class="listitem"><a href="https://www.facebook.com/themefisher">
+                            <img  class="footicon" src="https://img.icons8.com/m_rounded/512/facebook-new.png" alt="" height="30px" width="30px"></a></li>
+						<li class="listitem"><a href="https://twitter.com/themefisher">
+                            <img class="footicon" src="https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/twitter-512.png" alt="" height="30px" width="30px"></a></li>
+						<li class="listitem"><a href="https://www.pinterest.com/themefisher/">
+                           <img class="footicon" src=" https://img.icons8.com/ios11/512/linkedin.png" alt="" height="30px" width="30px"></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="frow1">
+				<div class="foot2">
+					<h4 class="ftext"><a href="">Department</a></h4>
+					<!-- <div class="divider"></div> -->
+
+					<ul class="flist">
+						<li><a href="departments.html">Surgery </a></li>
+						<li><a href="departments.html">Gynaecology</a></li>
+						<li><a href="departments.html">Oncology</a></li>
+						<li><a href="departments.html">Cardiology</a></li>
+						<li><a href="departments.html">Medicine</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="frow1">
+				<div class="foot2">
+					<h4 class="ftext">Support</h4>
+					<!-- <div class="divider"></div> -->
+
+					<ul class="flist">
+						<li><a href="discover.html">Terms &amp; Conditions</a></li>
+						<li><a href="discover.html">Privacy Policy</a></li>
+						<li><a href="contact.html">Company Support </a></li>
+						<li><a href="contact.html">FAQuestions</a></li>
+						<li><a href="discover.html">Company Licence</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="frow1">
+				<div class="foot2">
+					<h4 class="ftext">Get in Touch</h4>
+					<!-- <div class="divider"></div> -->
+
+					<div class="footercontact">
+						<div class="iconmail">
+							<img  class="micon" height="50px" width="50px" src="https://w7.pngwing.com/pngs/333/868/png-transparent-mail-computer-icons-email-graphy-e-mail-miscellaneous-angle-rectangle-thumbnail.png" alt="">
+							<span class="mtext">Support Available for 24/7</span>
+						</div>
+						<h4 class="fnum"><a href="tel:+23-345-67890">lifesprings@email.com</a></h4>
+					</div>
+
+					<div class="fcontact">
+						<div class="contacticon">
+							<img class="contactimg"  height="50px" width="50px" src="data:image/png;base64,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" alt="">
+							<span class="contacttext">Mon to Fri : 08:30 - 18:00</span>
+						</div>
+						<h4 class="fnum1"><a href="tel:+23-345-67890">+91-9912944489</a></h4>
+					</div>
+				</div>
+			</div>
+		  </div>
+        <!-- </div> -->
+		
+		<div class="footerbtm">
+			<div class="frowbtm">
+				<div class="colbtm">
+					<div class="copyright">
+						© Copyright Reserved to <span class="textcolor">Life Springs</span> by <a href="https://themefisher.com/" target="_blank">Themefisher</a>
+					</div>
+				</div>
+				<div class="colbtm1">
+					<div class="dofollow">
+						<form action="#" class="subscribe">
+							<input type="text" class="formsubscribe" placeholder="Your Email address">
+							<a href="#" class="btnsub">Subscribe</a>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+	  </div>
+
+	  <div class="colbtm2">
+		<div class="copyright1">
+	  Distributed by <a href="https://themewagon.com/" target="_blank">Themewagon</a>
+		</div>
+	  </div>
+    </footer>
+</body>
+</html>

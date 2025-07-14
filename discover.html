@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="discover.css">
+</head>
+<body>
+    <header class="header">
+        <div class="mail">
+          <a href="https://mail.google.com/"
+            ><img class="icon1"
+              src="https://static.vecteezy.com/system/resources/previews/016/716/465/non_2x/gmail-icon-free-png.png"
+              alt="mail"
+              style="height: 30px; width: 30px"
+          /></a>
+          <a href="https://mail.google.com/">Mail to: support@lifespring</a>
+        </div>
+        <div class="address">
+          <a
+            href="https://www.google.com/maps/place/Indraprastha+Apollo+Hospital/@28.5413647,77.2820434,19z/data=!4m10!1m2!2m1!1sdelhi+famous+hospital!3m6!1s0x390ce6ad13eaaa99:0x3bc07ad476bc6d77!8m2!3d28.5413093!4d77.2832182!15sChVkZWxoaSBmYW1vdXMgaG9zcGl0YWxaFyIVZGVsaGkgZmFtb3VzIGhvc3BpdGFskgEIaG9zcGl0YWyqAVwKCC9tLzBocG5yEAEqEyIPZmFtb3VzIGhvc3BpdGFsKAAyHhABIhrwfZq6c3enm5Ok1ooKHL8PzTvesudgVlK5XjIZEAIiFWRlbGhpIGZhbW91cyBob3NwaXRhbOABAA!16s%2Fg%2F1tnpjcxm?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D"
+            ><img class="icon1"
+              src="data:image/png;base64,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"
+              alt="pin"
+              style="width: 30px; height: 30px"
+          /></a>
+          <address>Address: Ta-134/A, Delhi, India</address>
+        </div>
+        <div class="number">
+          <img class="icon1"
+            src="https://static.vecteezy.com/system/resources/previews/005/747/811/non_2x/call-answer-icon-symbol-green-call-icon-symbol-for-web-app-logo-vector.jpg"
+            alt="call"
+            style="width: 30px"
+            height="30px"
+          />
+          <u>Call Now :+91-9912944489 </u>
+        </div>
+      </header>
+        <div class="nav">
+        <nav>
+          <div class="hospname">
+            <img class="icon1a"
+              class="hosplogo"
+              src="https://doctorlistingingestionpr.blob.core.windows.net/doctorprofilepic/1670828129787_ProviderLogo_loadTheImage.jpg"
+              height="50px"
+              width="23%"
+              alt="hospital"
+            />
+            <h1
+              
+            >
+              Life springs
+            </h1>
+          </div>
+          <div class="navbar">
+
+
+            <a class="d1" href="discover.html"
+              >DISCOVER
+              <div class="maindis">
+              <div class="none">
+                <div class="grid">
+                  <div>
+                    <ul>
+                      <li>The life spring Story</li>
+                      <li>Leadership</li>
+                      <li>Academics & Research</li>
+                      <li>Sustainability</li>
+                      <li>Corporate Governance</li>
+                      <li>Investor Relations</li>
+                      <li>Media Centre</li>
+                      <li>Corporate Tiepus & Partnerships</li>
+                      <li>Healers Circle</li>
+                      <li>Clinical Quality & Outcomes</li>
+                    </ul>
+                  </div>
+                  <div class="quick">
+                    <h2 style="
+                        background-color:rgba(255, 255, 255, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      ">Quick Links</h2>
+                    <div
+                      style="
+                       background-color: rgba(212, 237, 252, 0.686);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Emergency</div>
+                      <div>1066</div>
+                    </div>
+                    <div
+                      style="
+                       background-color:rgba(222, 246, 176, 0.729);
+                        height: 100px;
+                        width: 250px;
+                      "
+                    >
+                      <div>life spring Lifeline International</div>
+                      <div>+91 9912944489</div>
+                    </div>
+                    <div
+                      style="
+                      background-color:rgba(247, 217, 217, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Health Help Line</div>
+                      <div>1860-500-1066</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </a>
+
+
+            <a href="hosp.html">HOME</a>
+            <a class="d2" href="services.html">SERVICES
+              <div class="none">
+                <div class="grid">
+
+                <div>
+                  <ul>
+                    <li>Centres of Excellence & Specialties</li>
+                    <li>Find Doctor</li>
+                    <li>Book Health Check</li>
+                    <li>Patient Care</li>
+                    <li>Preventive Health - Life Spring ProHealth</li>
+                    <li>Pay Online</li>
+                  </ul>
+                </div>
+                 <div class="quick">
+                    <h2 style="
+                        background-color:rgba(255, 255, 255, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      ">Quick Links</h2>
+                    <div
+                      style="
+                        background-color: rgba(212, 237, 252, 0.686);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Emergency</div>
+                      <div>1066</div>
+                    </div>
+                    <div
+                      style="
+                        background-color:rgba(222, 246, 176, 0.729);
+                        height: 100px;
+                        width: 250px;
+                      "
+                    >
+                      <div>life spring Lifeline International</div>
+                      <div>+91 9912944489</div>
+                    </div>
+                    <div
+                      style="
+                        background-color:rgba(247, 217, 217, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Health Help Line</div>
+                      <div>1860-500-1066</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="d3" href="departments.html">DEPARTMENT
+              <div class="none">
+                <div class="grid">
+
+                <div>
+                  <ul>
+                    <li>Cardiology</li>
+                    <li>Gastroenterology</li>
+                    <li>Nephrology</li>
+                    <li>General Medicine</li>
+                    <li>Urology</li>
+                    <li>Plastic Surgery</li>
+                    <li>Obstetrics & Gynaecology</li>
+                    <li>Oncology</li>
+                    <li>Orthopaedics</li>
+                    <li>Neurosciences</li>
+                    <li>Dermatology</li>
+                    <li>view all</li>
+                  </ul>
+                </div>
+                 <div class="quick">
+                    <h2 style="
+                         background-color:rgba(255, 255, 255, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      ">Quick Links</h2>
+                    <div
+                      style="
+                         background-color: rgba(212, 237, 252, 0.686);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Emergency</div>
+                      <div>1066</div>
+                    </div>
+                    <div
+                      style="
+                        background-color:rgba(222, 246, 176, 0.729);
+                        height: 100px;
+                        width: 250px;
+                      "
+                    >
+                      <div>life spring Lifeline International</div>
+                      <div>+91 9912944489</div>
+                    </div>
+                    <div
+                      style="
+                         background-color:rgba(247, 217, 217, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Health Help Line</div>
+                      <div>1860-500-1066</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            </a>
+            <a class="d4" href="doctors.html">DOCTORS
+               <div class="none">
+                <div class="grid">
+
+                <div>
+                  <ul>
+                    <li>Book An Appointment</li>
+                    <li>Online consultation</li>
+                    <li>Any queries</li>
+                    
+                  </ul>
+                </div>
+                 <div class="quick">
+                    <h2 style="
+                        background-color:rgba(255, 255, 255, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      ">Quick Links</h2>
+                    <div
+                      style="
+                         background-color: rgba(212, 237, 252, 0.686);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Emergency</div>
+                      <div>1066</div>
+                    </div>
+                    <div
+                      style="
+                         background-color:rgba(222, 246, 176, 0.729);
+                        height: 100px;
+                        width: 250px;
+                      "
+                    >
+                      <div>life spring Lifeline International</div>
+                      <div>+91 9912944489</div>
+                    </div>
+                    <div
+                      style="
+                        background-color:rgba(247, 217, 217, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Health Help Line</div>
+                      <div>1860-500-1066</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            </a>
+            <a class="d5" href="contact.html">CONTACT
+               <div class="none">
+                <div class="grid">
+                  <ul>
+                    <li> For any quries contact us</li>
+                  </ul>
+
+                 <div class="quick">
+                    <h2 style="
+                         background-color:rgba(255, 255, 255, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      ">Quick Links</h2>
+                    <div
+                      style="
+                         background-color: rgba(212, 237, 252, 0.686);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Emergency</div>
+                      <div>1066</div>
+                    </div>
+                    <div
+                      style="
+                        background-color:rgba(222, 246, 176, 0.729);
+                        height: 100px;
+                        width: 250px;
+                      "
+                    >
+                      <div>life spring Lifeline International</div>
+                      <div>+91 9912944489</div>
+                    </div>
+                    <div
+                      style="
+                        background-color:rgba(247, 217, 217, 0.729);
+                        height: 50px;
+                        width: 250px;
+                      "
+                    >
+                      <div>Health Help Line</div>
+                      <div>1860-500-1066</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </nav>
+      </div>
+       <div class="mainimage">
+        <img src="https://i.pinimg.com/736x/1a/e2/1f/1ae21fa5075492cc6efbf9c526e1c178.jpg" alt="" width="100%" height="600px">
+       </div>
+       <div class="aboutgrid">
+        <div class="aboutimg">
+            <img class="sideimage" src="https://i.pinimg.com/736x/64/0e/93/640e932250f56c3f569a1ca937dad0e0.jpg" alt="" height="500px" width="600px">
+             <div class="abouttext"><h1 class="abouthead">Welcome to Life Springs Hospitals – where excellence is a way of life.</h1>
+                <p class="aboutpara">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo incidunt nulla natus exercitationem aperiam quam quibusdam dignissimos itaque, ipsam nesciunt hic corrupti id laboriosam explicabo labore dolorem cumque esse illo, ab perferendis. Adipisci accusamus laudantium fugit ad, earum rerum excepturi modi et tenetur repellat nobis beatae magnam dolorem. Incidunt doloribus similique dolorem laudantium iure reprehenderit ex adipisci iusto fuga? Vero, repudiandae tenetur optio, natus cumque atque corrupti excepturi quasi nisi voluptates, voluptatum sint quod beatae eveniet. Nihil sit, animi expedita dolores iusto inventore doloribus ipsum error a tempore. Sit nemo sed provident labore molestias expedita, fugiat iste pariatur aliquam officiis officia explicabo at iure omnis reprehenderit, optio quam accusamus animi beatae quas quos quaerat. Facere accusantium numquam minima perferendis omnis debitis ea. Obcaecati quod, esse assumenda, impedit beatae voluptates ab dolorum, laudantium sunt vero exercitationem dicta quas. Consectetur eaque modi laudantium neque exercitationem. Possimus consectetur molestias eveniet sed odit quas dolores corporis fugiat eius quaerat laboriosam magni, praesentium deserunt facere nam esse dignissimos aliquam debitis voluptatem impedit? Perspiciatis fugit ut nostrum sapiente doloremque eaque velit nihil assumenda, nemo tempora, quod voluptate asperiores exercitationem odit tempore unde consequatur ex eius. Voluptates, reiciendis suscipit! Blanditiis odio qui nesciunt, sit accusantium quis unde voluptatibus. Porro laudantium ipsa ratione voluptatem, voluptate impedit atque consequuntur, eveniet, amet itaque inventore optio! Ab cumque eum fuga impedit quidem obcaecati quae ullam accusantium! Hic esse, sapiente saepe quo itaque officia ex quaerat ad veniam vel, fugit unde deserunt obcaecati, ducimus iusto. Provident officia, totam perspiciatis quasi numquam voluptatum cum quam, quidem aperiam nobis non. Similique, illum. Totam, eius odio ratione nihil officia, fugiat adipisci corporis perferendis dolorum doloribus deserunt repellendus rerum, architecto modi amet impedit voluptates eligendi a quia magni neque accusamus fuga sunt eum! Accusantium neque dolores quo itaque doloremque, provident doloribus quae facilis culpa aliquid ea. Voluptatem distinctio corporis odio veniam libero architecto commodi repellat, sequi, molestias cum soluta et voluptate maiores alias delectus consequatur laboriosam? Cupiditate rerum autem exercitationem distinctio? Harum velit ratione facilis soluta ducimus repellendus nostrum veniam? Dolorum tempore vitae beatae impedit quo quos. Placeat soluta impedit voluptas veniam velit commodi eius, nobis in quos libero tempora ducimus consectetur possimus necessitatibus maiores quaerat cupiditate. Consequuntur dolores vitae consectetur voluptatem ab ut minima fugit, ullam itaque voluptatum veritatis mollitia deleniti eius temporibus non minus sint? Natus quidem omnis inventore sed! Eius doloribus perspiciatis porro aliquid esse nihil, cum perferendis, tempore quia sequi veniam assumenda obcaecati id suscipit sint eaque excepturi libero! Placeat, eos quasi! Molestias molestiae, non accusamus necessitatibus suscipit nemo ab inventore rerum iste repellat autem veritatis quod reprehenderit delectus sed nobis? Nemo explicabo vel possimus optio, soluta sit rerum voluptatem nam in dignissimos dolores quod exercitationem et eos deleniti, ipsam est at magnam quo sed quis debitis. Accusamus velit, sit maxime, illo sint, sed quos reiciendis exercitationem dicta nam porro dolorem veniam labore aperiam possimus culpa! Inventore quia id quo nulla aliquam harum ratione obcaecati ipsum similique dolore in reprehenderit, molestiae quas commodi officia magni a doloribus perferendis animi voluptas provident. Necessitatibus?
+                </p>
+                <p class="aboutpara">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil error alias voluptate magnam expedita architecto quas ea. In vero et praesentium perspiciatis provident tenetur voluptates alias, placeat cum esse cumque at autem nulla unde quos reiciendis eius architecto fugit, neque harum, blanditiis est aut asperiores ea? Excepturi eum, harum qui quasi eligendi dolorum totam hic obcaecati sapiente provident ratione tenetur, ullam ipsum suscipit quod rerum labore quas sint illo beatae sequi nulla alias. Temporibus quidem, vel reprehenderit aut assumenda sit illo, qui libero sint pariatur aliquam! Provident natus soluta incidunt amet, aperiam nobis in enim corrupti ex sapiente veritatis nulla omnis expedita velit non accusamus eos maiores obcaecati, eveniet nostrum. Voluptates at cum aperiam quibusdam autem accusamus? Cumque facere aperiam voluptatum pariatur nemo porro consectetur dolores debitis assumenda, corporis fugiat. Aperiam sint sapiente voluptates facere architecto temporibus velit dolorem iure doloremque neque mollitia repellat suscipit totam hic sunt accusantium qui minima, accusamus exercitationem aut numquam consequuntur. Laborum perspiciatis ipsam repellat sed enim error facere quo optio asperiores recusandae architecto dolorum nisi explicabo ut quod, voluptate voluptatum voluptates sit aut! Mollitia quae ipsam tempore dolore repellendus dolor provident quis modi, excepturi consectetur iusto corporis. Aliquam nostrum praesentium alias ipsum, fugiat fuga unde distinctio expedita labore, veritatis velit quisquam deleniti, consequuntur officiis eligendi eos. Nobis impedit corporis architecto consequatur atque maxime fugit, ex reprehenderit reiciendis tenetur beatae quasi modi similique? Eligendi, voluptas nihil quis obcaecati non eveniet totam sapiente quisquam? Temporibus minus error itaque, veritatis neque ducimus reiciendis voluptatum quae beatae cupiditate praesentium deleniti? Iure atque mollitia quisquam quis, quidem odio deleniti a harum ex. Repudiandae nulla ratione exercitationem dolores non tempore, facilis minima odit optio delectus quasi nisi magni vel inventore mollitia? Beatae et eum nobis odio, possimus quasi aut quo neque, earum aliquam reiciendis magni repellat reprehenderit harum quos consequuntur accusamus similique quaerat deserunt aliquid, tenetur porro nam! Quasi vero fuga reiciendis! Non assumenda obcaecati magni corporis modi quis debitis explicabo cumque beatae autem, hic repudiandae expedita magnam. Minus qui cupiditate consequuntur vero magnam consequatur aliquam. Ea animi officiis aliquam aspernatur exercitationem, voluptate, reiciendis est deleniti possimus quos, incidunt necessitatibus veniam obcaecati iste id doloremque quia suscipit iusto recusandae maiores modi dolore ab commodi consectetur! Impedit velit optio nam at alias, in sed soluta voluptatem eveniet ipsum totam adipisci excepturi laboriosam nulla dolore. Vero molestias expedita iure esse quae ducimus doloribus fugit dolorum quaerat excepturi, optio pariatur accusamus corrupti. Quibusdam fugiat laborum autem expedita, excepturi, ipsa doloremque maxime delectus vitae ipsam numquam recusandae molestias quasi voluptate consectetur eum tenetur ab, dolor repellendus! Tenetur non temporibus recusandae qui blanditiis eveniet vitae velit, reprehenderit magni eaque inventore voluptas cumque fugit a corrupti voluptatibus dignissimos labore earum tempore quibusdam ipsam! Magnam, voluptatem doloremque repellat laboriosam, quis sunt voluptatibus voluptate ducimus sequi, natus nostrum libero itaque modi eligendi quos praesentium facere? Rerum culpa animi hic consectetur est doloribus exercitationem expedita ipsam necessitatibus ut? Reiciendis et amet quibusdam mollitia voluptatem aliquam vero debitis, quisquam tenetur delectus libero quam ad, repellat consequatur commodi doloremque sit dolore.
+                </p>
+            </div>
+        </div>
+       </div>
+       <div class="mainvalues">
+        <div class="mission">
+            <h1 class="missionheading">Mission</h1>
+            <p class="missionpara1">
+                At life Springs Hospitals, our mission is to provide world-class healthcare to Indian and International patients whilst ensuring ‘inclusivity for all’ by:
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas corporis deserunt provident error. Quaerat ex minus cum natus perferendis, ab fugiat odit adipisci reiciendis, rem illum doloremque unde necessitatibus atque corrupti impedit porro repellendus. Explicabo harum quae tempore sint esse id repellendus ut in? Dolor excepturi dolorum deserunt corrupti. Amet, nostrum suscipit dolores voluptatum, explicabo veniam, quibusdam labore laborum aliquam quod earum ex ratione. Commodi officia enim facere, suscipit rerum nobis esse consequatur voluptatum, ad ipsam harum laudantium. Deserunt, cum obcaecati expedita, ut incidunt dolorum iusto fuga cumque quibusdam modi ducimus consequatur sed laborum neque et est sint repellendus aliquid. Amet illum distinctio assumenda adipisci odio expedita vero exercitationem similique architecto obcaecati molestiae, voluptatibus ipsa, nisi nulla, commodi eum autem dolorem. Dicta qui debitis id, iste illo perspiciatis neque ut? Doloremque amet, eligendi aliquam culpa quas voluptas libero, sit, enim earum repudiandae velit accusamus ut quam! Cumque culpa voluptates dicta cum quidem doloremque laboriosam nemo nam odit ducimus, tempora animi dolorum quod veritatis! Enim, dolorum illo. Esse, accusamus deleniti ducimus laboriosam odio impedit? Commodi, labore, eius expedita praesentium quam possimus ad unde eum est blanditiis ex! Alias soluta commodi at ab harum qui praesentium animi facere recusandae non, magni necessitatibus quidem iusto libero nesciunt voluptatibus. Voluptates, consectetur saepe, possimus architecto molestias ullam corporis, reiciendis accusantium vitae magni optio fuga! Repudiandae, maxime facilis animi non, voluptate nobis quam numquam sunt accusantium, ratione ex quos porro corrupti harum laudantium. Rerum tenetur illum soluta aliquam voluptate mollitia accusamus cum, temporibus id in excepturi aliquid recusandae dolorem iste ea facere fugit nulla et numquam odit autem quisquam fugiat. Optio quae quo eligendi assumenda veritatis nisi voluptatibus minima explicabo repellendus at perferendis consectetur ducimus aperiam voluptatum sunt impedit voluptates minus eius, dignissimos vitae debitis hic ut dolore. Eveniet fugit harum, distinctio explicabo omnis nam accusamus.
+            </p>
+        </div>
+        <div class="vision">
+            <h1 class="missionheading">Vision</h1>
+            <p class="missionpara2">
+                Life spring’s vision for the next phase of development is to ‘Touch a Billion Lives’. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id perferendis dolorum odio sapiente modi vitae repellendus placeat harum fugit labore nulla at error, et reiciendis optio quidem hic praesentium neque! Sequi fugiat adipisci velit est nulla facilis? Enim, labore eos quo, voluptates vitae saepe culpa, explicabo veritatis alias perspiciatis esse fuga recusandae obcaecati. Repudiandae nesciunt, voluptatum aspernatur tempora qui culpa, voluptatibus totam molestiae error dolorem, cum corporis eius laboriosam non magni expedita quam assumenda! Voluptatem commodi quibusdam eum, magnam a minima sunt vero libero nostrum, officiis reiciendis provident veritatis! Tempora nostrum quae, exercitationem deserunt, officiis officia excepturi ullam porro laborum nobis molestiae perferendis? Ipsum, facere a? Eius voluptas inventore facere consectetur nemo? Quod nemo non praesentium harum aspernatur. Minima aliquam similique doloribus assumenda necessitatibus voluptates itaque quo eius quas nulla. Labore reiciendis magnam architecto esse qui! Voluptatibus error voluptatum molestiae dolorum qui mollitia ipsa accusantium ex obcaecati, sint tenetur minima, velit tempore excepturi numquam, a alias laudantium nemo natus eum. Repellat, quidem. Hic ad eum nostrum, nihil eaque quos pariatur incidunt soluta voluptate consectetur, quo tempore, animi vitae distinctio facilis at quisquam fugit sed? Officia harum sed natus accusamus reprehenderit vero praesentium est autem, excepturi voluptates, doloremque dolores dicta repellendus, repudiandae vel fugit! Quo nam non earum architecto iusto corrupti quasi voluptatum sed voluptatem ullam vero velit asperiores dicta quam magnam accusamus totam ad eos reiciendis, consequuntur cumque quidem, iste debitis. Mollitia fugiat libero obcaecati odio pariatur dignissimos suscipit, ipsum maxime, voluptates nemo ratione magnam dicta facilis. Illo quas, sequi minima tempora ducimus est cum quam impedit incidunt distinctio rem at facere id amet! Facere qui magni non nostrum praesentium expedita, accusantium esse a dignissimos delectus, blanditiis assumenda? Molestiae vel ad quod veritatis labore vitae suscipit autem optio minima, iure minus! Consequatur dicta facilis quia maxime repellat dolorem, rem quam!
+            </p>
+        </div>
+        <div class="values">
+            <h1  class="missionheading">Values</h1>
+            <p class="missionpara3" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quo, aut veritatis asperiores recusandae animi culpa harum. Illum, blanditiis totam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit reiciendis beatae eligendi sed, vel qui nostrum aut odit explicabo tempore animi dolorem dolorum ullam quaerat! Hic ad nostrum laudantium libero rem dignissimos, blanditiis, ea totam dolorem modi mollitia repudiandae optio aspernatur aliquam magnam qui! Odio sint doloribus repellat et ad.   
+               <pre class="missionpara3"><b>Intrinsic Learner:</b> Strong orientation and interest in improving one’s skills continually.
+  <b>Nurture:</b> Contribute in improving skills and knowledge of colleagues at work place; be a team player and work together to resolve professional and patient issues.
+  <b>Self-Driven:</b> An intrinsic zeal to excel and innovate.
+  <b>Perfection:</b> Strong focus in specializing in their respective area of work or function.
+  <b>Integrity:</b> Communicate actively and accurately with patients while upholding highest standards of personal and professional ethics.
+  <b>Role Model:</b> Walk the talk; make things happen.
+  <b>Empathy:</b> Nurture kindness towards our patients and colleagues; provide support at all times!</pre>
+                 <p class="missionpara3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nesciunt ex accusantium sunt? Hic quo animi voluptate doloremque quis aspernatur suscipit fugit neque. Sapiente nam pariatur assumenda, porro id labore ullam consequatur, quasi quo iusto possimus dolor eos optio asperiores vitae, nobis veniam saepe non reprehenderit sed. Maiores aspernatur accusamus ex debitis, laboriosam odit dicta dignissimos inventore nam dolores cumque libero. Quis, exercitationem, tempora earum repudiandae dolor quae iusto unde est illum perferendis ab voluptatem autem eum? Nisi officiis similique nihil error fugiat voluptatem sed. Atque sint vel debitis earum dolorem consectetur quos, explicabo, necessitatibus quis incidunt quae corporis ex?
+                 </p>
+                </p>
+        </div>
+       </div>
+       <div class="mainappointbtn">
+        <div class="subappointbtn">
+            <a href="appointment.html"><button id="btnbookappoint">Book An Appointment</button></a>
+        </div>
+    </div>
+       <footer>
+    <div class="container">
+        <!-- <div class="mainfootergrid"> -->
+		  <div class="mainfooter">
+			<div class="frow1">
+				<div class="foot2">
+					<div class="fhosp">
+						<img  src= "https://doctorlistingingestionpr.blob.core.windows.net/doctorprofilepic/1670828129787_ProviderLogo_loadTheImage.jpg"
+                          height="100px"width="100px" alt="hospital" class="fhospimg"> <span class="fhospname">Life Springs</span>
+					</div>
+					<p>Tempora dolorem voluptatum nam vero assumenda voluptate, facilis ad eos obcaecati tenetur veritatis eveniet distinctio possimus.</p>
+
+					<ul class="listfoot">
+						<li class="listitem"><a href="https://www.facebook.com/themefisher">
+                            <img  class="footicon" src="https://img.icons8.com/m_rounded/512/facebook-new.png" alt="" height="30px" width="30px"></a></li>
+						<li class="listitem"><a href="https://twitter.com/themefisher">
+                            <img class="footicon" src="https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/twitter-512.png" alt="" height="30px" width="30px"></a></li>
+						<li class="listitem"><a href="https://www.pinterest.com/themefisher/">
+                           <img class="footicon" src=" https://img.icons8.com/ios11/512/linkedin.png" alt="" height="30px" width="30px"></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="frow1">
+				<div class="foot2">
+					<h4 class="ftext"><a href="">Department</a></h4>
+					<!-- <div class="divider"></div> -->
+
+					<ul class="flist">
+						<li><a href="departments.html">Surgery </a></li>
+						<li><a href="departments.html">Gynaecology</a></li>
+						<li><a href="departments.html">Oncology</a></li>
+						<li><a href="departments.html">Cardiology</a></li>
+						<li><a href="departments.html">Medicine</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="frow1">
+				<div class="foot2">
+					<h4 class="ftext">Support</h4>
+					<!-- <div class="divider"></div> -->
+
+					<ul class="flist">
+						<li><a href="discover.html">Terms &amp; Conditions</a></li>
+						<li><a href="discover.html">Privacy Policy</a></li>
+						<li><a href="contact.html">Company Support </a></li>
+						<li><a href="contact.html">FAQuestions</a></li>
+						<li><a href="discover.html">Company Licence</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="frow1">
+				<div class="foot2">
+					<h4 class="ftext">Get in Touch</h4>
+					<!-- <div class="divider"></div> -->
+
+					<div class="footercontact">
+						<div class="iconmail">
+							<img  class="micon" height="50px" width="50px" src="https://w7.pngwing.com/pngs/333/868/png-transparent-mail-computer-icons-email-graphy-e-mail-miscellaneous-angle-rectangle-thumbnail.png" alt="">
+							<span class="mtext">Support Available for 24/7</span>
+						</div>
+						<h4 class="fnum"><a href="tel:+23-345-67890">lifesprings@email.com</a></h4>
+					</div>
+
+					<div class="fcontact">
+						<div class="contacticon">
+							<img class="contactimg"  height="50px" width="50px" src="data:image/png;base64,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" alt="">
+							<span class="contacttext">Mon to Fri : 08:30 - 18:00</span>
+						</div>
+						<h4 class="fnum1"><a href="tel:+23-345-67890">+91-9912944489</a></h4>
+					</div>
+				</div>
+			</div>
+		  </div>
+        <!-- </div> -->
+		
+		<div class="footerbtm">
+			<div class="frowbtm">
+				<div class="colbtm">
+					<div class="copyright">
+						© Copyright Reserved to <span class="textcolor">Life Springs</span> by <a href="https://themefisher.com/" target="_blank">Themefisher</a>
+					</div>
+				</div>
+				<div class="colbtm1">
+					<div class="dofollow">
+						<form action="#" class="subscribe">
+							<input type="text" class="formsubscribe" placeholder="Your Email address">
+							<a href="#" class="btnsub">Subscribe</a>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div class="colbtm2">
+		<div class="copyright1">
+	  Distributed by <a href="https://themewagon.com/" target="_blank">Themewagon</a>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
