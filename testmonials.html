@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Contact us</title>
+    <title>document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -110,155 +110,176 @@
       text-align: center;
       padding: 100px 0;
     }
-      body {
+     body {
+      margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: #fff;
     }
 
-    h2 {
-      font-weight: 700;
-      text-align: center;
-      margin-bottom: 20px;
+    .testimonial-section {
+      padding: 50px 20px;
     }
 
-    .section-title {
-      text-align: center;
-      color: #607d3b;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 2px;
+    .testimonial-container {
+      max-width: 1200px;
+      margin: auto;
     }
 
-    .form-control:focus {
-      border-color: #cddc39;
-      box-shadow: none;
-    }
-
-    .btn-send {
-      background-color: #f1e159;
-      transition: all 0.3s ease;
-    }
-
-    .btn-send:hover {
-      background-color: #e0d24a;
-      transform: scale(1.05);
-    }
-
-    .contact-icon {
-      font-size: 1.5rem;
-      color: #f1e159;
-    }
-
-    .info-box {
-      transition: transform 0.3s;
-    }
-
-    .info-box:hover {
-      transform: translateY(-5px);
-    }
-
-    iframe {
-      border-radius: 8px;
-      width: 100%;
-      height: 250px;
-    }
-
-    .form-section {
-      padding: 60px 0;
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
     }
 
     @media (max-width: 768px) {
-      iframe {
-        height: 200px;
+      .testimonial-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .testimonial-bubbles {
+        height: 350px;
+      }
+
+      .testimonial-content {
+        margin-top: 30px;
       }
     }
 
+    .testimonial-bubbles {
+      position: relative;
+      width: 100%;
+      height: 500px;
+    }
 
-    /* Social Icons Animation */
-/* .top-bar a i,
-footer .social-icons i,
-.navbar-nav i {
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-.top-bar a:hover i,
-footer .social-icons i:hover,
-.navbar-nav i:hover {
-  transform: rotate(15deg) scale(1.3);
-  color: #f7e57f;
-}
+    .bubble {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      position: absolute;
+      object-fit: cover;
+      border: 5px solid #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-/* Form Field Animation */
-/* .form-control {
-  transition: all 0.3s ease;
-}
-.form-control:focus {
-  border-color: #cddc39;
-  box-shadow: 0 0 8px rgba(205, 220, 57, 0.6);
-  transform: scale(1.02);
-} */
+    .bubble:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      border: 3px solid #4CAF50;
+    }
 
-/* Button Interaction */
-/* .btn-send:focus,
-.btn-send:active {
-  background-color: #cddc39;
-  box-shadow: 0 0 10px rgba(205, 220, 57, 0.5);
-  transform: scale(1.05);
-}
+    .top-left   { top: 80px;  left: 120px; }
+    .top-right  { top: 120px; right: 100px; }
+    .bottom-left  { bottom: 120px; left: 140px; }
+    .bottom-right { bottom: 80px;  right: 120px; }
 
-/* Newsletter Input Focus */
-/* .newsletter input:focus {
-  outline: none;
-  box-shadow: 0 0 6px #f7e57f;
-} */ */
+    .quote-symbol {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 150px;
+      color: #eee;
+      z-index: 0;
+    }
 
-/* Responsive Fixes */
-/* @media (max-width: 768px) {
-  .equal-section {
-    flex-direction: column;
-  }
-  .left-col,
-  .right-col {
-    flex: 1 1 100%;
-  }
-  .hero h1 {
-    font-size: 32px;
-  }
-  .hero p {
-    font-size: 16px;
-  }
-}  */
+    .section-subtitle {
+      color: #4CAF50;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
 
-/* Form Control: Focus & Active State */
-.form-control {
-  transition: all 0.3s ease;
-  background-color: #fff;
-  border: 1px solid #ccc;
-}
+    .section-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 10px 0 30px;
+      color: #2c3e50;
+    }
 
-.form-control:focus,
-.form-control:active {
-  background-color: #fdfde7; /* soft yellow tone */
-  border-color: #cddc39;
-  box-shadow: 0 0 10px rgba(205, 220, 57, 0.4);
-  transform: scale(1.02);
-}
+    .testimonial-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      transition: box-shadow 0.3s ease;
+    }
 
-/* Textarea animation */
-textarea.form-control:focus,
-textarea.form-control:active {
-  background-color: #fefad8;
-  border-color: #cddc39;
-  box-shadow: 0 0 12px rgba(205, 220, 57, 0.4);
-}
+    .testimonial-box:hover {
+      box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+    }
 
-/* Send Button */
-.btn-send:focus,
-.btn-send:active {
-  background-color: #d6ce38;
-  color: #222;
-  transform: scale(1.06);
-  box-shadow: 0 0 8px rgba(198, 198, 37, 0.5);
-}
+    .client-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #4CAF50;
+    }
+
+    .testimonial-text {
+      color: #777;
+      margin-top: 15px;
+      font-size: 16px;
+    }
+
+    .client-name {
+      font-weight: bold;
+      color: #2c3e50;
+      margin-top: 15px;
+    }
+
+    .client-role {
+      color: #4CAF50;
+      margin-bottom: 15px;
+    }
+
+    .testimonial-box input[type="radio"] {
+      display: none;
+    }
+
+    .testimonial {
+      display: none;
+      animation: fade 0.5s ease-in-out;
+    }
+
+    .testimonial-box input[type="radio"]:nth-of-type(1):checked ~ .testimonial:nth-of-type(1),
+    .testimonial-box input[type="radio"]:nth-of-type(2):checked ~ .testimonial:nth-of-type(2),
+    .testimonial-box input[type="radio"]:nth-of-type(3):checked ~ .testimonial:nth-of-type(3) {
+      display: block;
+    }
+
+    @keyframes fade {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    .navigation-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .nav-btn {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      border: none;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      font-size: 18px;
+      color: #4CAF50;
+      transition: 0.3s;
+    }
+
+    .nav-btn:hover {
+      background: #4CAF50;
+      color: #fff;
+    }
+
 
 
     
@@ -316,85 +337,81 @@ textarea.form-control:active {
     </div>
   </div>
 </nav>
-
     <!-- Hero Section -->
     <section class="hero">
       <div class="container">
-        <h1>Contact</h1>
+        <h1>Testimonial</h1>
         <p>Home / Pages / About</p>
       </div>
     </section>
-    <!-- form section -->
-     <div class="container form-section">
-    <div class="text-center">
-      <div class="section-title">Contact Us</div>
-      <h2>If You Have Any Query,<br>Please Contact Us</h2>
-    </div>
 
-    <div class="row mt-5 g-4">
-      <!-- Contact Form -->
-      <div class="col-lg-6">
-        <h5 class="mb-3 fw-bold">Need a functional contact form?</h5>
-        <!-- <p class="text-muted">
-          The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. 
-          <a href="#" class="text-decoration-none">Download Now</a>. -->
-        <!-- </p> -->
-        <form>
-          <div class="row g-3">
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Your Name" required />
-            </div>
-            <div class="col-md-6">
-              <input type="email" class="form-control" placeholder="Your Email" required />
-            </div>
-            <div class="col-12">
-              <input type="text" class="form-control" placeholder="Subject" required />
-            </div>
-            <div class="col-12">
-              <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-send px-4 py-2">Send Message</button>
-            </div>
-          </div>
-        </form>
-      </div>
+<!-- Testimonial Section -->
+<section class="testimonial-section">
+    <div class="testimonial-container">
+      <div class="testimonial-grid">
 
-      <!-- Contact Details -->
-      <div class="col-lg-6">
-        <h5 class="mb-4 fw-bold">Contact Details</h5>
-        <div class="d-flex align-items-start mb-3 info-box">
-          <div class="me-3 contact-icon">📍</div>
-          <div>
-            <strong>Our Office</strong><br />
-            123 Street, New York, USA
+        <!-- Bubbles -->
+        <div class="testimonial-bubbles">
+          <img src="https://themewagon.github.io/milky/img/testimonial-1.jpg" class="bubble top-left" alt="client1" />
+          <img src="https://themewagon.github.io/milky/img/testimonial-3.jpg" class="bubble top-right" alt="client2" />
+          <img src="https://themewagon.github.io/milky/img/testimonial-2.jpg" class="bubble bottom-left" alt="client3" />
+          <img src="https://themewagon.github.io/milky/img/testimonial-4.jpg" class="bubble bottom-right" alt="client4" />
+          <div class="quote-symbol">❝</div>
+        </div>
+
+        <!-- Content -->
+        <div class="testimonial-content">
+          <h4 class="section-subtitle">TESTIMONIAL</h4>
+          <h2 class="section-title">What People Say About<br>Our Dairy Farm</h2>
+          
+          <div class="testimonial-box">
+            <!-- Radio Buttons -->
+            <input type="radio" name="testimonial" id="t1" checked>
+            <input type="radio" name="testimonial" id="t2">
+            <input type="radio" name="testimonial" id="t3">
+            
+            <!-- Testimonial 1 -->
+            <div class="testimonial">
+              <img src="https://themewagon.github.io/milky/img/testimonial-1.jpg" class="client-img" alt="Client" />
+              <p class="testimonial-text">
+               "As someone who works closely with livestock every day, I can confidently say this dairy farm delivers top-quality milk. You can tell their animals are well cared for—the milk is pure, fresh, and tastes just like it should."
+              </p>
+              <h5 class="client-name">Client A</h5>
+              <p class="client-role">Farmer</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial">
+              <img src="https://themewagon.github.io/milky/img/testimonial-2.jpg" class="client-img" alt="Client" />
+              <p class="testimonial-text">
+              "This dairy farm consistently provides nutrient-rich milk and dairy products that support bone health, immunity, and overall wellness. I recommend it to anyone looking for natural, unadulterated nutrition."
+              </p>
+              <h5 class="client-name">Client B</h5>
+              <p class="client-role">Nutritionist</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial">
+              <img src="https://themewagon.github.io/milky/img/testimonial-3.jpg" class="client-img" alt="Client" />
+              <p class="testimonial-text">
+                Amazing quality and service. Fresh products delivered on time. Love it!
+              </p>
+              <h5 class="client-name">Client C</h5>
+              <p class="client-role">Chef</p>
+            </div>
+
+            <!-- Navigation (using labels as buttons) -->
+            <div class="navigation-buttons">
+              <label for="t1" class="nav-btn">&larr;</label>
+              <label for="t2" class="nav-btn">&#9679;</label>
+              <label for="t3" class="nav-btn">&rarr;</label>
+            </div>
           </div>
         </div>
-        <div class="d-flex align-items-start mb-3 info-box">
-          <div class="me-3 contact-icon">📞</div>
-          <div>
-            <strong>Call Us</strong><br />
-            +012 345 67890
-          </div>
-        </div>
-        <div class="d-flex align-items-start mb-3 info-box">
-          <div class="me-3 contact-icon">✉️</div>
-          <div>
-            <strong>Mail Us</strong><br />
-            info@example.com
-          </div>
-        </div>
-        <div class="mt-4">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193572.13216816743!2d-74.11808687111657!3d40.70531103620312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250b9fe0887d5%3A0x4b0561dc53d6b868!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sin!4v1656702041441!5m2!1sen!2sin" 
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
+
       </div>
     </div>
-  </div>
+  </section>
    <!-- footer section -->
     <footer>
     <div class="container">

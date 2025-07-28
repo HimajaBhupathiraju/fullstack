@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dairy Farm</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar d-flex justify-content-between">
+    <div>Follow Us: 
+      <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+      <a href="https://x.com/i/flow/login"><i class="bi bi-twitter"></i></a>
+      <a href="https://www.linkedin.com/login"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="bi bi-instagram"></i></a>
+    </div>
+    <div class="call-us">
+      <i class="bi bi-telephone-fill"></i> Call Us: +012 345 6789
+    </div>
+  </div>
+
+  <!-- Navbar -->
+
+   <nav class="navbar navbar-expand-lg bg-white">
+   <div class="container">
+    <img class="logo" src="https://i.pinimg.com/1200x/0c/0c/10/0c0c10c0a94654cc4e05fdae5d421eb9.jpg" alt="" height="100px" weigth="100px">
+    <a style="color: rgb(22, 91, 116); padding: 10px;" class="navbar-brand" href="#">Dairy Farm</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-primary" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-primary" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-primary" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link text-primary" href="products.html">Products</a></li>
+
+        <!-- Dropdown (styled to match nav links) -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-primary" href="#" role="button" data-bs-toggle="dropdown">
+            Pages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+            <li><a class="dropdown-item" href="features.html">Features</a></li>
+            <li><a class="dropdown-item" href="our team.html">Our Team</a></li>
+            <li><a class="dropdown-item" href="testmonials.html">Testimonial</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link text-primary" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-primary" href="#"><i class="bi bi-search"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+      <!-- <div class="carousel-controls">
+      <label for="slide1"><i class="bi bi-chevron-left"></i></label>
+      <label for="slide2"><i class="bi bi-chevron-right"></i></label>
+    </div>  -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://themewagon.github.io/milky/img/carousel-2.jpg" class="d-block w-100" alt="..." >
+      <div class="carousel-caption d-none d-md-block">
+        <h1 style="color: white;">The Farm Of Dairy Products</h1>
+        <p style="color: yellow;">Welcome To Our Dairy Farm</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://themewagon.github.io/milky/img/carousel-1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+         <h1  style="color: white;">The Farm Of Dairy Products</h1>
+        <p style="color: yellow;">Welcome To Our Dairy Farm</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1659148566517-9dfe52f802ac?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+         <h1  style="color: white;">The Farm Of Dairy Products</h1>
+        <p style="color: yellow;">Welcome To Our Dairy Farm</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  
+
+<div class="container py-5">
+  <div class="equal-section">
+
+    <!-- LEFT COLUMN -->
+    <div class="left-col">
+      <div class="img-grid">
+        <div class="grid-item">
+          <div class="experience-box">
+            <h1 class="display-4 mb-1">25</h1>
+            <p class="mb-0">Years Experience</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="https://i.pinimg.com/1200x/4c/20/47/4c20474cfe87648e34e0ec321bacba11.jpg" alt="Cow 1">
+        </div>
+        <div class="grid-item">
+          <img src="https://i.pinimg.com/1200x/a1/94/6a/a1946a202746cc7caf2773aec7d53f44.jpg" alt="Cow 2">
+        </div>
+        <div class="grid-item">
+          <img src="https://i.pinimg.com/736x/fb/af/00/fbaf008f843810e12462d8da83c41c72.jpg" alt="Cow 3">
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="right-col">
+      <div>
+        <p class="text-success fw-semibold">ABOUT US</p>
+        <h2 class="about-heading">Know About Our Dairy Farm &amp; Our History</h2>
+        <p class="text-muted">
+          Since 1900, our dedicated farmers have been producing quality milk with a little help ‘from the Team’. Our range of quality dairy products have been enjoyed by Indian families for generations. We hope it’s enjoyed for many generations to come.
+        </p>
+
+        <div class="row pt-3">
+          <div class="col-sm-6 about-feature d-flex mb-3">
+            <div class="me-3">
+              <i class="bi bi-house-heart-fill about-icon"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold">Dedicated Farm Services</h6>
+              <p class="text-muted mb-0">Professional and caring staff for animal health and comfort.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 about-feature d-flex mb-3">
+            <div class="me-3">
+              <i class="bi bi-droplet-half about-icon"></i>
+            </div>
+            <div>
+              <h6 class="fw-bold">Organic Milk Products</h6>
+              <p class="text-muted mb-0">Pure, chemical-free milk and dairy from our certified cows.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-custom mt-4 px-4 py-2 align-self-start">Explore More</button>
+    </div>
+
+  </div>
+</div>
+
+
+
+    <!-- Why Us section -->
+     <section class="yussection">
+    <div class="row align-items-center mt-5">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <small class="text-success">WHY US!</small>
+        <h3 class="fw-bold mt-2">Few Reasons Why People Choosing Us!</h3>
+        <p>Commitment to freshness, purity, and convenience in Delivery</p>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-check text-success me-2"></i>Farm-fresh and natural</li>
+          <li><i class="bi bi-check text-success me-2"></i>Quality assurance</li>
+          <li><i class="bi bi-check text-success me-2"></i>Health Focus: By avoiding preservatives and delivering fresh produce</li>
+        </ul>
+        <button class="btn btn-custom">Explore More</button>
+      </div>
+
+      <!-- Statistics grid -->
+      <div class="col-md-6">
+        <div class="stats-grid rounded overflow-hidden">
+          <div class="stats-item green-bg">
+            <i class="bi bi-award"></i>
+            <h3>25</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stats-item yellow-bg">
+            <i class="bi bi-trophy"></i>
+            <h3>183</h3>
+            <p>Award Winning</p>
+          </div>
+          <div class="stats-item yellow-bg">
+            <i class="bi bi-cow"></i>
+            <h3>2619</h3>
+            <p>Total Animals</p>
+          </div>
+          <div class="stats-item green-bg">
+            <i class="bi bi-emoji-smile"></i>
+            <h3>51940</h3>
+            <p>Happy Clients</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- Services Section -->
+  <section class="dark-section text-center py-5">
+    <div class="container">
+      <div class="row justify-content-center g-4">
+        <div class="col-md-5 d-flex align-items-center">
+          <div class="card card-custom text-start text-white border-0 w-100">
+            <div class="row g-0 align-items-center">
+              <div class="col-4">
+                <img src="https://themewagon.github.io/milky/img/banner-1.jpg" alt="Dairy Cow" class="img-fluid rounded-start">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h4 class="card-title fw-bold">We Sell Best Dairy Products</h4>
+                  <p class="card-text small">We offer premium quality dairy products made from the freshest milk to ensure rich taste and nutrition.
+                    From farm to table, our products are pure, natural, and crafted with care for your family's health.</p>
+                  <a href="#" class="btn btn-yellow">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5 d-flex align-items-center">
+          <div class="card card-custom text-start text-white border-0 w-100">
+            <div class="row g-0 align-items-center">
+              <div class="col-4">
+                <img src="https://themewagon.github.io/milky/img/banner-2.jpg" alt="Milk Delivery" class="img-fluid rounded-start">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <h4 class="card-title fw-bold">We Deliver Fresh Milk across states </h4>
+                  <p class="card-text small">We deliver farm-fresh milk daily across states, ensuring purity and freshness in every drop.</p>
+                  <a href="#" class="btn btn-yellow">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <!-- <h2 class="mb-5">Services We Offer</h2> -->
+     <h2 class="fw-bold mb-5">Services That We Offer<br>For Customers</h2>
+    <div class="row g-4">
+      <!-- Service 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card">
+          <div class="content">
+            <div class="service-icon">🥛</div>
+            <h5 class="card-title">Fresh Milk</h5>
+            <p class="card-text">Delivered directly from our farms every morning.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card">
+          <div class="content">
+            <div class="service-icon">🧀</div>
+            <h5 class="card-title">Organic Cheese</h5>
+            <p class="card-text">Handcrafted cheese made with love.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card service-card">
+          <div class="content">
+            <div class="service-icon">🍦</div>
+            <h5 class="card-title">Ice Cream</h5>
+            <p class="card-text">Delicious flavors made from farm-fresh ingredients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+
+   
+   <!-- Gallery Grid -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row gallery-grid g-2">
+        <div class="col-6 col-md-3"><img src="https://themewagon.github.io/milky/img/gallery-5.jpg" alt="Cow 1"></div>
+        <div class="col-6 col-md-3"><img src="https://i.pinimg.com/1200x/a0/49/21/a04921bad5b20290ebe0588b46f5ab92.jpg" alt="Cow 2"></div>
+        <div class="col-6 col-md-3"><img src="https://i.pinimg.com/1200x/2d/84/0f/2d840fd37b665b7be304ccee920f278d.jpg" alt="Cow 3"></div>
+        <div class="col-6 col-md-3"><img src="https://i.pinimg.com/736x/fb/af/00/fbaf008f843810e12462d8da83c41c72.jpg" alt="Cow 4"></div>
+        <div class="col-6 col-md-3"><img src="https://i.pinimg.com/736x/bf/6e/22/bf6e227ee92b2a00334a8fe5609146d7.jpg" alt="Cow 5"></div>
+        <div class="col-6 col-md-3"><img src="https://themewagon.github.io/milky/img/gallery-6.jpg" alt="Cow 6"></div>
+        <div class="col-6 col-md-3"><img src="https://i.pinimg.com/736x/77/f5/d7/77f5d74130929b24495ff8478d38a633.jpg" alt="Cow 7"></div>
+        <div class="col-6 col-md-3"><img src="https://themewagon.github.io/milky/img/gallery-8.jpg" alt="Cow 8"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Products -->
+  <section class="section-padding text-center">
+  <div class="container">
+    <small class="text-success">OUR PRODUCTS</small>
+    <h2 class="fw-bold mb-5">Our Dairy Products For<br>Healthy Living</h2>
+    <div class="row justify-content-center">
+      <!-- Product Card -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="product-card position-relative overflow-hidden">
+          <img src="https://themewagon.github.io/milky/img/product-1.jpg" class="img-fluid" alt="Pure Milk">
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <a href="#" class="icon"><i class="bi bi-cart-fill"></i></a>
+            <a href="#" class="icon"><i class="bi bi-link-45deg"></i></a>
+          </div>
+          <h6 class="mt-3">Pure Milk</h6>
+          <p><span class="price">$19.00</span> <span class="old-price">$29.00</span></p>
+        </div>
+      </div>
+      <!-- Repeat for other products -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="product-card position-relative overflow-hidden">
+          <img src="https://i.pinimg.com/736x/0c/cd/1b/0ccd1b8111ec5e133c960dc8d773d099.jpg" class="img-fluid" alt="Fresh Meat">
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <a href="#" class="icon"><i class="bi bi-cart-fill"></i></a>
+            <a href="#" class="icon"><i class="bi bi-link-45deg"></i></a>
+          </div>
+          <h6 class="mt-3">Milk kova</h6>
+          <p><span class="price">$19.00</span> <span class="old-price">$29.00</span></p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="product-card position-relative overflow-hidden">
+          <img src="https://i.pinimg.com/1200x/09/7e/c7/097ec74fbf81f8199cefc395481be708.jpg" class="img-fluid" alt="Dairy Products">
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <a href="#" class="icon"><i class="bi bi-cart-fill"></i></a>
+            <a href="#" class="icon"><i class="bi bi-link-45deg"></i></a>
+          </div>
+          <h6 class="mt-3">Junnu</h6>
+          <p><span class="price">$19.00</span> <span class="old-price">$29.00</span></p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="product-card position-relative overflow-hidden">
+          <img src="https://themewagon.github.io/milky/img/product-4.jpg" class="img-fluid" alt="Organic Food">
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <a href="#" class="icon"><i class="bi bi-cart-fill"></i></a>
+            <a href="#" class="icon"><i class="bi bi-link-45deg"></i></a>
+          </div>
+          <h6 class="mt-3">Organic Food</h6>
+          <p><span class="price">$19.00</span> <span class="old-price">$29.00</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <!-- <small class="text-success">OUR PRODUCTS</small>
+    <h2 class="fw-bold mb-5">Our Dairy Products For<br>Healthy Living</h2> -->
+    <div class="row justify-content-center">
+      <!-- Product Card -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="product-card position-relative overflow-hidden">
+          <img src="https://i.pinimg.com/1200x/26/18/e5/2618e5ebd3ca9afcbc3f6f1f595e7d17.jpg" class="img-fluid" alt="Pure Milk">
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <a href="#" class="icon"><i class="bi bi-cart-fill"></i></a>
+            <a href="#" class="icon"><i class="bi bi-link-45deg"></i></a>
+          </div>
+          <h6 class="mt-3">Yogurt</h6>
+          <p><span class="price">$25.00</span> <span class="old-price">$29.00</span></p>
+        </div>
+      </div>
+      <!-- Repeat for other products -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="product-card position-relative overflow-hidden">
+          <img src="https://i.pinimg.com/736x/bf/f9/69/bff969d4751345a50e5c958d720dc9e0.jpg" class="img-fluid" alt="Fresh Meat">
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <a href="#" class="icon"><i class="bi bi-cart-fill"></i></a>
+            <a href="#" class="icon"><i class="bi bi-link-45deg"></i></a>
+          </div>
+          <h6 class="mt-3">Cheese</h6>
+          <p><span class="price">$28.00</span> <span class="old-price">$29.00</span></p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="product-card position-relative overflow-hidden">
+          <img src="https://i.pinimg.com/736x/a3/f0/36/a3f03602ace29352f2a2e923f76ac486.jpg" class="img-fluid" alt="Dairy Products">
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <a href="#" class="icon"><i class="bi bi-cart-fill"></i></a>
+            <a href="#" class="icon"><i class="bi bi-link-45deg"></i></a>
+          </div>
+          <h6 class="mt-3">Paneer</h6>
+          <p><span class="price">$34.00</span> <span class="old-price">$29.00</span></p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="product-card position-relative overflow-hidden">
+          <img src="https://i.pinimg.com/1200x/c1/c7/28/c1c72827c9f8d940d12925ed9a2e0e3e.jpg" class="img-fluid" alt="Organic Food">
+          <div class="overlay d-flex justify-content-center align-items-center">
+            <a href="#" class="icon"><i class="bi bi-cart-fill"></i></a>
+            <a href="#" class="icon"><i class="bi bi-link-45deg"></i></a>
+          </div>
+          <h6 class="mt-3">Organic Icecream</h6>
+          <p><span class="price">$19.00</span> <span class="old-price">$29.00</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="section-padding text-center">
+    <div class="container">
+      <small class="text-success">OUR TEAM</small>
+      <h2 class="fw-bold mb-5">Experienced Team<br>Members</h2>
+      <div class="row">
+        <!-- Member 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="team-card">
+            <img src="https://themewagon.github.io/milky/img/team-1.jpg" alt="Adam Crew">
+            <h6>Adam Crew</h6>
+            <small>Founder</small>
+            <div class="team-social">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Member 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="team-card">
+            <img src="https://themewagon.github.io/milky/img/team-2.jpg" alt="Doris Jordan">
+            <h6>Doris Jordan</h6>
+            <small>Veterinarian</small>
+            <div class="team-social">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Member 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="team-card">
+            <img src="https://themewagon.github.io/milky/img/team-3.jpg" alt="Jack Dawson">
+            <h6>Jack Dawson</h6>
+            <small>Farmer</small>
+            <div class="team-social">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="testimonial-section">
+    <div class="testimonial-container">
+      <div class="testimonial-grid">
+
+        <!-- Bubbles -->
+        <div class="testimonial-bubbles">
+          <img src="https://themewagon.github.io/milky/img/testimonial-1.jpg" class="bubble top-left" alt="client1" />
+          <img src="https://themewagon.github.io/milky/img/testimonial-3.jpg" class="bubble top-right" alt="client2" />
+          <img src="https://themewagon.github.io/milky/img/testimonial-2.jpg" class="bubble bottom-left" alt="client3" />
+          <img src="https://themewagon.github.io/milky/img/testimonial-4.jpg" class="bubble bottom-right" alt="client4" />
+          <div class="quote-symbol">❝</div>
+        </div>
+
+        <!-- Content -->
+        <div class="testimonial-content">
+          <h4 class="section-subtitle">TESTIMONIAL</h4>
+          <h2 class="section-title">What People Say About<br>Our Dairy Farm</h2>
+          
+          <div class="testimonial-box">
+            <!-- Radio Buttons -->
+            <input type="radio" name="testimonial" id="t1" checked>
+            <input type="radio" name="testimonial" id="t2">
+            <input type="radio" name="testimonial" id="t3">
+            
+            <!-- Testimonial 1 -->
+            <div class="testimonial">
+              <img src="https://themewagon.github.io/milky/img/testimonial-1.jpg" class="client-img" alt="Client" />
+              <p class="testimonial-text">
+               "As someone who works closely with livestock every day, I can confidently say this dairy farm delivers top-quality milk. You can tell their animals are well cared for—the milk is pure, fresh, and tastes just like it should."
+              </p>
+              <h5 class="client-name">Client A</h5>
+              <p class="client-role">Farmer</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial">
+              <img src="https://themewagon.github.io/milky/img/testimonial-2.jpg" class="client-img" alt="Client" />
+              <p class="testimonial-text">
+              "This dairy farm consistently provides nutrient-rich milk and dairy products that support bone health, immunity, and overall wellness. I recommend it to anyone looking for natural, unadulterated nutrition."
+              </p>
+              <h5 class="client-name">Client B</h5>
+              <p class="client-role">Nutritionist</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial">
+              <img src="https://themewagon.github.io/milky/img/testimonial-3.jpg" class="client-img" alt="Client" />
+              <p class="testimonial-text">
+                Amazing quality and service. Fresh products delivered on time. Love it!
+              </p>
+              <h5 class="client-name">Client C</h5>
+              <p class="client-role">Chef</p>
+            </div>
+
+            <!-- Navigation (using labels as buttons) -->
+            <div class="navigation-buttons">
+              <label for="t1" class="nav-btn">&larr;</label>
+              <label for="t2" class="nav-btn">&#9679;</label>
+              <label for="t3" class="nav-btn">&rarr;</label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <!-- Our Office -->
+        <div class="col-md-3 mb-4">
+          <h6>Our Office</h6>
+          <p>123 Street, New York, USA</p>
+          <p>+012 345 67890</p>
+          <p>info@example.com</p>
+          <div class="social-icons">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+          </div>
+        </div>
+        <!-- Quick Links -->
+        <div class="col-md-3 mb-4">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="about.html">Terms & Condition</a></li>
+            <li><a href="contact">Support</a></li>
+          </ul>
+        </div>
+        <!-- Business Hours -->
+        <div class="col-md-3 mb-4">
+          <h6>Business Hours</h6>
+          <p>Monday - Friday<br><strong>09.00 am - 07.00 pm</strong></p>
+          <p>Saturday<br><strong>09.00 am - 12.00 pm</strong></p>
+          <p>Sunday<br><strong>Closed</strong></p>
+        </div>
+        <!-- Newsletter -->
+        <div class="col-md-3 mb-4">
+          <h6>Newsletter</h6>
+          <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+          <div class="newsletter">
+            <input type="email" placeholder="Your Email">
+            <button>Signup</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © Your Site Name. All Rights Reserved.
+    </div>
+  </footer>
+  
+
+</body>
+</html>
+
+
